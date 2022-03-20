@@ -1,4 +1,5 @@
 import { AddDecisionForm } from './AddDecisionForm';
+import { ComputeDecisionForm } from './ComputeDecisionForm';
 import { DecisionOptionDisplay } from './DecisionOptionDisplay';
 
 interface Props {
@@ -14,7 +15,7 @@ export const DecisionListDisplay: React.FC<Props> = ({decisionList}) => {
         ))}
       </ul>
       <AddDecisionForm addDecision={decisionList.addDecision} />
+      <ComputeDecisionForm computeDecision={decisionList.computeDecision} />
     </>
   );
 };
-

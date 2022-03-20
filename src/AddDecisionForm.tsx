@@ -6,7 +6,7 @@ interface Props {
 
 export const AddDecisionForm: React.FC<Props> = ({addDecision}) => {
   const [text, setText] = useState('');
-  const [weighting, setWeighting] = useState(0);
+  const [weighting, setWeighting] = useState(1);
 
   return (
     <form>
