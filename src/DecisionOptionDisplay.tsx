@@ -1,3 +1,4 @@
+import { List } from '@mantine/core';
 import React from 'react';
   
 interface Props {
@@ -5,5 +6,9 @@ interface Props {
 }
 
 export const DecisionOptionDisplay: React.FC<Props> = ({decisionOption}) => {
-  return <li>{decisionOption.weighting}: {decisionOption.text}</li>;
+  return (
+    <List.Item>
+      {decisionOption.weighting}: {decisionOption.text}
+    </List.Item>
+  );
 };
